@@ -19,3 +19,5 @@ node_modules/
 # information for Eclipse / Flash Builder.
 
 .DS_Store
+.vscode/
+
