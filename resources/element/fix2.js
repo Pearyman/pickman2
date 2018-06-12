@@ -13,17 +13,17 @@ $(window).on('load', () => {
 
   const page = $('.el-scrollbar__view')
   page.on('click', '.show-menu .menu-button, .page-container-right', function () {
-    container.addClass('hide-menu').removeClass('show-menu')
-    container.find('.menu-button').text('>>')
-  })
+      container.addClass('hide-menu').removeClass('show-menu')
+      container.find('.menu-button').html('<i class="el-icon-arrow-right"></i>')
+    })
   page.on('click', '.hide-menu .menu-button', function () {
-    container.addClass('show-menu').removeClass('hide-menu')
-    container.find('.menu-button').text('<<')
-  })
+      container.addClass('show-menu').removeClass('hide-menu')
+      container.find('.menu-button').html('<i class="el-icon-arrow-left"></i>')
+    })
   page.on('click', '.side-nav .nav-item a', function () {
-    window.parent.postMessage({ title: this.textContent, hash: this.href.split('#').pop() }, '*')
-    $('.demo-block-control button, .page-component-up').remove()
-  })
+      window.parent.postMessage({ title: this.textContent, hash: this.href.split('#').pop() }, '*')
+      $('.demo-block-control button, .page-component-up').remove()
+    })
   $(document.body).css('display', 'block')
   window.parent.postMessage({ loaded: true }, '*')
 })

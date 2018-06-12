@@ -1,7 +1,7 @@
 {
   "name": "pickman2",
   "displayName": "pickman2",
-  "description": "A vscode extension for Element-UI",
+  "description": "fly with this plugin",
   "version": "0.0.1",
   "publisher": "pearyman",
   "repository": {
@@ -23,18 +23,18 @@
     "onCommand:element-helper.searchUnderCursor"
   ],
   "main": "./out/src/extension",
-  "icon": "element.png",
+  "icon": "pickman2.png",
   "contributes": {
     "commands": [
       {
         "command": "element-helper.searchUnderCursor",
-        "title": "element-helper.search"
+        "title": "pickman2.search"
       }
     ],
     "keybindings": [
       {
         "command": "element-helper.searchUnderCursor",
-        "key": "ctrl+cmd+z",
+        "key": "cmd+1",
         "when": "editorTextFocus"
       }
     ],
@@ -60,7 +60,7 @@
         },
         "element-helper.version": {
           "type": "string",
-          "default": "1.4",
+          "default": "2.3",
           "description": "Document version of Element UI",
           "enum": [
             "1.4",

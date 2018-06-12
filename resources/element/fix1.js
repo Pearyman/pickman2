@@ -9,20 +9,20 @@ $(window).on('load', () => {
   menu.append('<div class="menu-button">>></div>')
 
   $('.headerWrapper, .footer, .footer-nav, .page-component-up, .header-anchor, .description button').remove()
-  container.css({padding: 0, margin: 0}).children().attr('class', 'hide-menu')
+  container.css({ padding: 0, margin: 0 }).children().attr('class', 'hide-menu')
 
   container.on('click', '.show-menu .menu-button, .page-container-right', function () {
-    container.children().attr('class', 'hide-menu')
-    container.find('.menu-button').text('>>')
-  })
+      container.children().attr('class', 'hide-menu')
+      container.find('.menu-button').html('<i class="el-icon-arrow-right"></i>')
+    })
   container.on('click', '.hide-menu .menu-button', function () {
-    container.children().attr('class', 'show-menu')
-    container.find('.menu-button').text('<<')
-  })
+      container.children().attr('class', 'show-menu')
+      container.find('.menu-button').html('<i class="el-icon-arrow-left"></i>')
+    })
   container.on('click', '.side-nav .nav-item a', function () {
-    window.parent.postMessage({ title: this.textContent, hash: this.href.split('#').pop() }, '*')
-    $('.description button').remove()
-  })
+      window.parent.postMessage({ title: this.textContent, hash: this.href.split('#').pop() }, '*')
+      $('.description button').remove()
+    })
   $(document.body).css('display', 'block')
   window.parent.postMessage({ loaded: true }, '*')
 })
