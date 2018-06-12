@@ -23,5 +23,13 @@ export default {
       
     }
   });
+
+  this.$confirm('提示', '', {
+    confirmButtonText: '',
+    cancelButtonText: '',
+    type: ''
+  }).then(() => {
+    
+  }).catch(() => {});
 }
 </script>
