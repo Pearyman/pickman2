@@ -6,7 +6,7 @@ $(window).on('load', () => {
   container.find('.page-component__content').first().addClass('page-container-right').css('margin-left', '20px')
   let menu = container.find('.page-component__nav').first()
   menu.addClass('page-container-left').find('.nav-dropdown').remove()
-  menu.append('<div class="menu-button">>></div>')
+  menu.append('<div class="menu-button"><i class="el-icon-arrow-right"></i></div>')
 
   $('.headerWrapper, .footer-nav, .page-component-up, .demo-block-control button').remove()
   container.addClass('hide-menu')

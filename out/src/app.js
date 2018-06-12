@@ -92,7 +92,7 @@ const HTML_CONTENT = (query) => {
     const href = resource_1.default.ELEMENT_HOME_URL + componentPath.replace('main.html', 'index.html');
     const iframeSrc = 'file://' + Path.join(resource_1.default.ELEMENT_PATH, componentPath).split(Path.sep).join('/');
     const notice = ({
-        'zh-CN': `版本：${html}，在线示例请在浏览器中<a href="${href}">查看</a>`,
+        'zh-CN': `当前版本2.3，<a href="${href}">浏览器中查看</a>`,
         'en-US': `Version: ${html}, view online examples in <a href="${href}">browser</a>`,
         'es': `Versión: ${html}, ejemplo en línea en la <a href="${href}">vista</a> del navegador`
     })[language];
