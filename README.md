@@ -1,139 +1,33 @@
-# VSCode-Element-Helper
+# Pickman2 
 
-> VSCode-Element-Helper is a VS Code extension for Element-UI. If you use ATOM editor, please go to [ATOM version](https://github.com/ElemeFE/element-helper)
-
-Element-UI is a great library. More and more projects use it. So, For helping developer write more efficient by Element-UI, VSCode-Element-Helper is born.
+> based on element-ui 
 
 ## Feature
 
-* Document
+> 支持对Element-ui的提示，如下：
 
-* Autocomplete
+<img src='http://lc-a5zjlnxg.cn-n1.lcfile.com/7ed9b5203f3b786269e1.gif' width='600'/>
 
-	support vue, html and jade/pug language
+<a href='http://lc-a5zjlnxg.cn-n1.lcfile.com/f55a8e26d4c8bfdecb1b.gif' target='_blank'>观看地址</a>
 
-* Snippets
+> 支持文档的在线查阅，更新element-ui  2.3版本
 
+    `键盘命令:` command + 1   光标选中你要查询的el-*， 即可查询。 如下：
 
-## Document
+<img src='http://lc-a5zjlnxg.cn-n1.lcfile.com/91c020fbb97ab20de812.gif' width='600'/>
 
-### Usage
+<a href='http://lc-a5zjlnxg.cn-n1.lcfile.com/91c020fbb97ab20de812.gif' target='_blank'>观看地址</a>
 
-1 - Move cursor to Element-UI tag or select it
+> 支持多种代码片段，目前涵盖alert, toast等。如下：
 
-2 - Press default hot key `ctrl + cmd + z`(windows: `ctrl + win + z`) or 
-    Press ⇧⌘P to bring up the Command Palette and then input `element-helper.search`
+<img src='http://lc-a5zjlnxg.cn-n1.lcfile.com/6872709d7e5f56795711.gif' width='600'/>
 
-3 - Show document view If complete matching,
-    or you should select tag you want to search
+<a href='http://lc-a5zjlnxg.cn-n1.lcfile.com/6872709d7e5f56795711.gif' target='_blank'>观看地址</a>
 
-4 - Enter and trigger document browser
-
-![document](https://user-images.githubusercontent.com/1659577/27990775-4b7db888-6494-11e7-9b27-3ec7fa5f99b7.gif)
-
-### Version, Quotes, Indentation size and Language Switching
-
-1 - Enter `Preferences` -> `setting` or shortcut `cmd` + `,`
-
-2 - Modify language, version or indentation size
-```javascript
-  "element-helper.language": "zh-CN",
-  "element-helper.version": "1.3",
-  "element-helper.indent-size": 2,
-  "element-helper.quotes": "double",    // html vue qoutes
-  "element-helper.pug-quotes": "single" // jade/pug quotes
-```
-
-### Auto Update Mechanism
-
-Document is off-line and auto synchronize with Element-UI official site.
-
-### Keymap
-
-Default hot key is  `ctrl + cmd + z`( windows: `ctrl + win + z`). If it has conflicted with other software's hot key. You can customize it. see [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-editor)
-
-
-## Autocomplete
-
-![autocomplete](https://user-images.githubusercontent.com/1659577/27990774-4b7b3662-6494-11e7-83a4-9e6ed3ef698a.gif)
-
-* Distinguish and auto complete property and method for every Element-UI tag
-
-* Prompt value when value is some special type like Boolean or ICON.
-
-
-## Snippets
-
-![snippets](https://user-images.githubusercontent.com/1659577/27990776-4b9386f4-6494-11e7-9c08-596a13afd706.gif)
-
-Support snippets list:
-
-* `msg`
-
-  ```
-  this.$message({
-    message: '',
-    type: ''
-  })
-  ```
-
-* `alert`
-
-  ```
-  this.$alert('', '', {
-    confirmButtonText: '',
-    callback: () => {}
-  });
-  ```
-
-* `confirm`
-
-  ```
-  this.$confirm('', '', {
-    confirmButtonText: '',
-    cancelButtonText: '',
-    type: ''
-  }).then(() => {})
-    .catch(() => {});
-  ```
-
-* `prompt`
-
-  ```
-  this.$prompt('', '', {
-    confirmButtonText: '',
-    cancelButtonText: '',
-    inputPattern: //,
-    inputErrorMessage: ''
-  }).then(({ value }) => {})
-    .catch(() => {});
-  ```
-
-* `msgb`
-
-  ```
-  this.$msgbox({
-    title: '',
-    message: '',
-    showCancelButton: '',
-    confirmButtonText: '',
-    cancelButtonText: '',
-    beforeClose: (action, instance, done) => {}
-  }).then(action => {});
-  ```
-
-* `notify`
-
-  ```
-  this.$notify({
-    title: '',
-    message: ''
-  });
-  ```
 
 ## Contribution
 
-Your pull request will make VSCode-Element-Helper better.
+Welcome to create Pull Requests
 
 ## LICENSE
 
